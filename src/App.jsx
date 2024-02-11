@@ -6,6 +6,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 import Sun from './componets/Sun';
 import Venus from './componets/Venus';
+import Stars from './componets/Stars';
 
 import Mars from './componets/Mars';
 
@@ -33,6 +34,7 @@ const App = () => {
       >
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
+        <Stars/>
         <Sun />
         <Venus/>
         <Mars/>
