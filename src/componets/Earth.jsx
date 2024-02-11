@@ -1,12 +1,13 @@
-import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { TextureLoader } from 'three';
+//Earth.jsx
+import React, { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { TextureLoader } from "three";
 
 const Earth = () => {
   const earthRef = useRef();
 
   // Cargar la textura con TextureLoader
-  const texture = new TextureLoader().load('/texturas/earth_texture.jpg');
+  const texture = new TextureLoader().load("/texturas/earth_texture.jpg");
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
@@ -26,7 +27,7 @@ const Earth = () => {
   });
 
   return (
-    <mesh ref={earthRef} position={[6, 0, 0]}>
+    <mesh ref={earthRef} position={[9, 0, 0]} name="Earth">
       <sphereGeometry args={[1, 32, 32]} />
       <meshStandardMaterial map={texture} />
     </mesh>

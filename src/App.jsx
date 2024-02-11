@@ -9,6 +9,7 @@ import Sun from './componets/Sun';
 import Mercury from './componets/Mercury';
 import Venus from './componets/Venus';
 import Earth from './componets/Earth';
+import Moon from './componets/Moon';
 import Mars from './componets/Mars';
 
 extend({ OrbitControls });
@@ -40,6 +41,7 @@ const App = () => {
         <Mercury/>
         <Venus/>
         <Earth/>
+        <Moon/>
         <Mars/>
         {/* Otros componentes */}
         <CameraControls />
