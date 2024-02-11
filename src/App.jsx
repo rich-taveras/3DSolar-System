@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import { Canvas, extend, useThree} from '@react-three/fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-import Sun from './componets/Sun';
-import Venus from './componets/Venus';
 import Stars from './componets/Stars';
-
+import Sun from './componets/Sun';
+import Mercury from './componets/Mercury';
+import Venus from './componets/Venus';
+import Earth from './componets/Earth';
 import Mars from './componets/Mars';
 
 extend({ OrbitControls });
@@ -36,7 +37,9 @@ const App = () => {
 <pointLight position={[10, 10, 10]} />
         <Stars/>
         <Sun />
+        <Mercury/>
         <Venus/>
+        <Earth/>
         <Mars/>
         {/* Otros componentes */}
         <CameraControls />
