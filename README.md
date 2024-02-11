@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# 3D Solar System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto representa un modelo básico del sistema solar en 3D utilizando React y Three.js a través de react-three-fiber.
 
-## Available Scripts
+## Demostración
 
-In the project directory, you can run:
+[Enlace a la demostración en vivo](#) (Actualiza con el enlace de tu demostración si la tienes en línea).
 
-### `npm start`
+## Capturas de pantalla
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Captura de pantalla del sistema solar en 3D](screenshot.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Características
 
-### `npm test`
+- Modelado 3D del sistema solar con planetas en órbita alrededor del sol.
+- Animaciones para simular rotación y traslación de los planetas.
+- Controles de órbita para explorar el sistema solar.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías Utilizadas
 
-### `npm run build`
+- React
+- Three.js
+- react-three-fiber
+- styled-components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clona este repositorio: `git clone https://github.com/tu-usuario/3D-Solar-System.git`
+2. Navega al directorio del proyecto: `cd 3D-Solar-System`
+3. Instala las dependencias: `npm install`
+4. Inicia la aplicación: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Uso
 
-### `npm run eject`
+- Usa los controles de órbita para explorar el sistema solar.
+- Disfruta de la representación 3D de los planetas en movimiento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contribuciones
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Las contribuciones son bienvenidas. Si encuentras un problema o tienes una sugerencia, por favor, abre un problema o envía un pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Licencia
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está bajo la Licencia [MIT](LICENSE).

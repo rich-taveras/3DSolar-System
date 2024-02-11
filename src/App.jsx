@@ -7,6 +7,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Sun from './componets/Sun';
 import Venus from './componets/Venus';
 
+import Mars from './componets/Mars';
+
 extend({ OrbitControls });
 
 const CameraControls = () => {
@@ -33,6 +35,7 @@ const App = () => {
         <pointLight position={[10, 10, 10]} />
         <Sun />
         <Venus/>
+        <Mars/>
         {/* Otros componentes */}
         <CameraControls />
       </Canvas>
