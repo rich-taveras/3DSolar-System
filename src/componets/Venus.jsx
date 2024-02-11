@@ -1,12 +1,16 @@
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
+import { TextureLoader } from 'three';
 
 const Venus = () => {
   const venusRef = useRef();
 
+  // Cargar la textura con TextureLoader
+  const texture = new TextureLoader().load('/texturas/venus_texture.jpg');
+
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = 0.2;
+    const rotationSpeed = 0.35;
 
     // Actualiza la rotación alrededor del sol
     venusRef.current.rotation.y += rotationSpeed * delta;
@@ -24,7 +28,7 @@ const Venus = () => {
   return (
     <mesh ref={venusRef} position={[6, 0, 0]}>
       <sphereGeometry args={[1, 32, 32]} />
-      <meshBasicMaterial color={0xffa500} />
+      <meshStandardMaterial map={texture} />
     </mesh>
   );
 };
