@@ -1,3 +1,4 @@
+//Venus.jsx
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { TextureLoader } from 'three';
@@ -17,7 +18,7 @@ const Venus = () => {
 
     // Calcula la nueva posición en la órbita circular alrededor del sol
     const angle = venusRef.current.rotation.y;
-    const distanceFromSun = 10;
+    const distanceFromSun = 20;
     const newX = Math.cos(angle) * distanceFromSun;
     const newZ = Math.sin(angle) * distanceFromSun;
 

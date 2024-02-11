@@ -37,7 +37,8 @@ Este proyecto representa un modelo básico del sistema solar en 3D utilizando Re
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si encuentras un problema o tienes una sugerencia, por favor, abre un problema o envía un pull request.
+Puedes encontrar texturas de planetas en: 
+[Solar System Scope](https://www.solarsystemscope.com/textures/).
 
 ## Licencia
 
