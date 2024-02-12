@@ -16,7 +16,7 @@ const SaturnRing = () => {
     ringRef.current.rotation.y += rotationSpeed * delta;
 
     // Ajusta la inclinación del anillo en 45 grados
-    ringRef.current.rotation.x = Math.PI / -3; // 45 grados en radianes
+    ringRef.current.rotation.x = Math.PI / -2; // 45 grados en radianes
 
    // Obtiene la posición actual de la Tierra en el escenario
    const saturnPosition = state.scene.getObjectByName("Saturn").position;
@@ -33,7 +33,7 @@ const SaturnRing = () => {
 
   return (
     <mesh ref={ringRef} position={[0, 0, 0]}>
-      <ringGeometry args={[8, 11, 50]} />
+      <ringGeometry args={[8, 12, 80]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );
