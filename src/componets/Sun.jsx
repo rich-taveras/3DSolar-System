@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { TextureLoader } from 'three';
-import { SphereGeometry, MeshBasicMaterial } from 'three';
 
 const Sun = () => {
   const sunRef = useRef();
@@ -19,7 +18,7 @@ const Sun = () => {
 
   return (
     <mesh ref={sunRef}>
-      <sphereGeometry args={[5, 32, 32]} />
+      <sphereGeometry args={[16, 32, 32]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );

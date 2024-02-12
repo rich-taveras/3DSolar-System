@@ -10,7 +10,7 @@ const Moon = () => {
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = 0.1;
+    const rotationSpeed = .1;
 
     // Actualiza la rotación alrededor de la Tierra
     moonRef.current.rotation.y += rotationSpeed * delta;
@@ -20,7 +20,7 @@ const Moon = () => {
 
     // Calcula la nueva posición en la órbita circular alrededor de la Tierra
     const angle = moonRef.current.rotation.y;
-    const distanceFromEarth = 2; // Puedes ajustar la distancia de la Luna a la Tierra
+    const distanceFromEarth = 6; // Puedes ajustar la distancia de la Luna a la Tierra
     const newX = earthPosition.x + Math.cos(angle) * distanceFromEarth;
     const newZ = earthPosition.z + Math.sin(angle) * distanceFromEarth;
 
@@ -30,7 +30,7 @@ const Moon = () => {
 
   return (
     <mesh ref={moonRef} position={[0, 0, 0]}>
-      <sphereGeometry args={[0.2, 32, 32]} />
+      <sphereGeometry args={[1, 32, 32]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );

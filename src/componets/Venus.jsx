@@ -11,14 +11,14 @@ const Venus = () => {
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = 0.35;
+    const rotationSpeed = 0.05;
 
     // Actualiza la rotación alrededor del sol
     venusRef.current.rotation.y += rotationSpeed * delta;
 
     // Calcula la nueva posición en la órbita circular alrededor del sol
     const angle = venusRef.current.rotation.y;
-    const distanceFromSun = 20;
+    const distanceFromSun = 40;
     const newX = Math.cos(angle) * distanceFromSun;
     const newZ = Math.sin(angle) * distanceFromSun;
 
@@ -28,7 +28,7 @@ const Venus = () => {
 
   return (
     <mesh ref={venusRef} position={[6, 0, 0]}>
-      <sphereGeometry args={[1, 32, 32]} />
+      <sphereGeometry args={[4, 32, 32]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );

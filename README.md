@@ -4,11 +4,11 @@ Este proyecto representa un modelo básico del sistema solar en 3D utilizando Re
 
 ## Demostración
 
-[Enlace a la demostración en vivo](#) (Actualiza con el enlace de tu demostración si la tienes en línea).
+[Enlace a la demostración en vivo](https://3-d-solar-system-virid.vercel.app/).
 
 ## Capturas de pantalla
 
-![Captura de pantalla del sistema solar en 3D](screenshot.png)
+![alt text](public/texturas/ProjectScreenshot.png)
 
 ## Características
 

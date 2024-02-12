@@ -11,14 +11,14 @@ const Earth = () => {
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = 0.35;
+    const rotationSpeed = 0.12;
 
     // Actualiza la rotación alrededor del sol
     earthRef.current.rotation.y += rotationSpeed * delta;
 
     // Calcula la nueva posición en la órbita circular alrededor del sol
     const angle = earthRef.current.rotation.y;
-    const distanceFromSun = 30;
+    const distanceFromSun = 55;
     const newX = Math.cos(angle) * distanceFromSun;
     const newZ = Math.sin(angle) * distanceFromSun;
 
@@ -28,7 +28,7 @@ const Earth = () => {
 
   return (
     <mesh ref={earthRef} position={[9, 0, 0]} name="Earth">
-      <sphereGeometry args={[1, 32, 32]} />
+      <sphereGeometry args={[4, 32, 32]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );
