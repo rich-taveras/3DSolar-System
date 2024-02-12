@@ -10,7 +10,7 @@ const Sun = () => {
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = -0.1;
+    const rotationSpeed = 0;
 
         // Actualiza la rotación alrededor del sol
         sunRef.current.rotation.y += rotationSpeed * delta;

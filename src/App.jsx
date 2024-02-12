@@ -15,6 +15,7 @@ import Jupiter from "./componets/Jupiter";
 import Saturn from "./componets/Saturn";
 import Neptune from "./componets/Neptune";
 import Uranus from "./componets/Uranus";
+// import Cometa from "./componets/Cometa";
 
 extend({ OrbitControls });
 
@@ -52,6 +53,7 @@ const App = () => {
 
         <Neptune />
         <Uranus />
+        {/* <Cometa/> */}
         {/* Otros componentes */}
         <CameraControls />
       </Canvas>

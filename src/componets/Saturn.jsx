@@ -11,7 +11,7 @@ const Saturn = () => {
 
   useFrame((state, delta) => {
     // Ajusta la velocidad de rotación y traslación según tus preferencias
-    const rotationSpeed = .12;
+    const rotationSpeed = .05;
 
     // Actualiza la rotación alrededor del sol
     saturnRef.current.rotation.y += rotationSpeed * delta;
